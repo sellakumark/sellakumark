@@ -1,18 +1,14 @@
 <h1 align="center">Hi 👋, I'm Sellakumar</h1>
 
-<h2 class="text-center">A passionate web developer</h2>
-
-<br/>
+<h3 class="text-center">A passionate web developer</h3>
 
 <ul>
-<li>👋 Currently working as a product development manager at Syncfusion Software Pvt Ltd.</li>
-<li>👀 I’m interested in developing web-based project development.</li>
-<li>🌱 I’m currently learning <i class="fs-bold">angular</i> framework.</li>
-<li>💞️ I’m looking to collaborate on angular based web projects.</li>
-<li>📫 You can reach me by <a href="mailto:sellakumark@outlook.com" title="sellakumark@outlook.com">email</a> or <a href="https://wa.me/919976119157" title="+919976119157">phone</a>.</li>
+    <li>👋 Currently working as a product development manager at Syncfusion Software Pvt Ltd.</li>
+    <li>👀 I’m interested in developing web-based project development.</li>
+    <li>🌱 I’m currently learning <i class="fs-bold">angular</i> framework.</li>
+    <li>💞️ I’m looking to collaborate on angular based web projects.</li>
+    <li>📫 You can reach me by <a href="mailto:sellakumark@outlook.com" title="sellakumark@outlook.com">email</a> or <a href="https://wa.me/919976119157" title="+919976119157">phone</a>.</li>
 </ul>
-
-<br/>
 
 <h2>Languages</h2>
 
@@ -110,8 +106,6 @@
         </tbody>
     </table>
 </div>
-
-<br/>
 
 <h2>Editor Tools</h2>
 

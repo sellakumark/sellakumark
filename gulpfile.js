@@ -3,6 +3,7 @@ var shelljs = require('shelljs');
 
 /** Deploy to GitHub pages */
 gulp.task('deploy', function (done) {
+  console.log(process.env);
   shelljs.exec('git config --global user.email "' + process.env.USER_MAIL + '"');
   shelljs.exec('git config --global user.name "' + process.env.USER + '"');
   shelljs.exec('git config pull.rebase false');

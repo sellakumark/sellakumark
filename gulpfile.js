@@ -3,12 +3,10 @@ var shelljs = require('shelljs');
 
 /** Deploy to GitHub pages */
 gulp.task('deploy', function (done) {
-  console.log(process.env);
-  console.log(process.env.GITHUB_ENV);
   shelljs.exec('git config --global user.email "' + process.env.USER_MAIL + '"');
   shelljs.exec('git config --global user.name "' + process.env.USER + '"');
   shelljs.exec('git config pull.rebase false');
-  var gitPath = 'https://' + process.env.USER + ':' + process.env.TOKEN + '@github.com/' + process.env.USER + '/' + process.env.USER + '.github.io.git';
+  var gitPath = 'https://' + process.env.USER + ':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@github.com/' + process.env.USER + '/' + process.env.USER + '.github.io.git';
   console.log('Clone has been started..!');
   var clone = shelljs.exec('git clone ' + gitPath + ' ' + './repo', { silent: false });
   if (clone.code !== 0) {

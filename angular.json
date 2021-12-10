@@ -31,9 +31,24 @@
               "src/assets"
             ],
             "styles": [
+              "node_modules/bootstrap/dist/css/bootstrap.min.css",
+              "node_modules/bootstrap-icons/font/bootstrap-icons.css",
+              "node_modules/aos/dist/aos.css",
+              "node_modules/boxicons/css/boxicons.min.css",
+              "node_modules/glightbox/dist/css/glightbox.min.css",
+              "node_modules/swiper/swiper.min.css",
               "src/styles.scss"
             ],
-            "scripts": []
+            "scripts": [
+              "node_modules/aos/dist/aos.js",
+              "node_modules/bootstrap/dist/js/bootstrap.bundle.min.js",
+              "node_modules/glightbox/dist/js/glightbox.min.js",
+              "node_modules/isotope-layout/dist/isotope.pkgd.min.js",
+              "node_modules/swiper/swiper-bundle.min.js",
+              "node_modules/typed.js/lib/typed.min.js",
+              "node_modules/@srexi/purecounterjs/js/purecounter_vanilla.js",
+              "node_modules/waypoints/lib/noframework.waypoints.min.js"
+            ]
           },
           "configurations": {
             "production": {
@@ -53,13 +68,13 @@
               "budgets": [
                 {
                   "type": "initial",
-                  "maximumWarning": "750kb",
+                  "maximumWarning": "1mb",
                   "maximumError": "1mb"
                 },
                 {
                   "type": "anyComponentStyle",
-                  "maximumWarning": "250kb",
-                  "maximumError": "500kb"
+                  "maximumWarning": "512kb",
+                  "maximumError": "512kb"
                 }
               ]
             }
@@ -94,24 +109,9 @@
               "src/assets"
             ],
             "styles": [
-              "node_modules/bootstrap/dist/css/bootstrap.min.css",
-              "node_modules/bootstrap-icons/font/bootstrap-icons.css",
-              "node_modules/aos/dist/aos.css",
-              "node_modules/boxicons/css/boxicons.min.css",
-              "node_modules/glightbox/dist/css/glightbox.min.css",
-              "node_modules/swiper/swiper.min.css",
               "src/styles.scss"
             ],
-            "scripts": [
-              "node_modules/aos/dist/aos.js",
-              "node_modules/bootstrap/dist/js/bootstrap.bundle.min.js",
-              "node_modules/glightbox/dist/js/glightbox.min.js",
-              "node_modules/isotope-layout/dist/isotope.pkgd.min.js",
-              "node_modules/swiper/swiper-bundle.min.js",
-              "node_modules/typed.js/lib/typed.min.js",
-              "node_modules/@srexi/purecounterjs/js/purecounter_vanilla.js",
-              "node_modules/waypoints/lib/noframework.waypoints.min.js"
-            ]
+            "scripts": []
           }
         },
         "lint": {

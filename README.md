@@ -79,7 +79,7 @@
                 </td>
                 <td align="center">
                     <a href="https://jquery.com/" target="_blank" title="jQuery">
-                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/jquery/jquery-original.svg" alt="typescript" width="40" height="40"/>
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/jquery/jquery-original.svg" alt="jquery" width="40" height="40"/>
                     </a>
                 </td>
                 <td align="center">
@@ -89,7 +89,7 @@
                 </td>
                 <td align="center">
                     <a href="https://angular.io" target="_blank" title="Angular">
-                        <img src="https://angular.io/assets/images/logos/angular/angular.svg" alt="angular" width="40" height="40"/>
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/angularjs/angularjs-plain.svg" alt="angular" width="40" height="40"/>
                     </a>
                 </td>
                 <td align="center">

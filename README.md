@@ -105,6 +105,34 @@
             </tr>
         </tbody>
     </table>
+    <table class="text-center">
+        <thead>
+            <tr>
+                <th>Express</th>
+                <th>MongoDB</th>
+                <th>NodeJS</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td align="center">
+                    <a href="https://expressjs.com/" target="_blank" title="Express">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/express/express-original.svg" alt="express" width="40" height="40"/>
+                    </a>
+                </td>
+                <td align="center">
+                    <a href="https://www.mongodb.com/" target="_blank" title="MongoDB">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original.svg" alt="mongodb" width="40" height="40"/>
+                    </a>
+                </td>
+                <td align="center">
+                    <a href="https://nodejs.org/" target="_blank" title="NodeJS">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg" alt="nodejs" width="40" height="40"/>
+                    </a>
+                </td>
+            </tr>
+        </tbody>
+    </table>
 </div>
 
 <h3>Editor Tools</h3>

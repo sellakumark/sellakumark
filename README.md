@@ -26,34 +26,34 @@
         </thead>
         <tbody>
             <tr>
-                <td>
+                <td align="center">
                     <a href="https://www.w3.org/html/" target="_blank" title="HTML">
-                        <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/html5/html5-original.svg" alt="HTML" width="40" height="40"/>
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" alt="HTML" width="40" height="40"/>
                     </a>
                 </td>
-                <td>
+                <td align="center">
                     <a href="https://pugjs.org/" target="_blank" title="PUG">
                         <img src="https://avatars.githubusercontent.com/u/9338635?s=200&v=4" alt="PUG" width="40" height="40"/>
                     </a>
                 </td>
-                <td>
+                <td align="center">
                     <a href="https://www.w3schools.com/css/" target="_blank" title="CSS">
-                        <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/css3/css3-original.svg" alt="CSS" width="40" height="40"/>
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" alt="CSS" width="40" height="40"/>
                     </a>
                 </td>
-                <td>
+                <td align="center">
                     <a href="https://sass-lang.com/" target="_blank" title="SASS">
-                        <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/sass/sass-original.svg" alt="SASS" width="40" height="40"/>
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/sass/sass-original.svg" alt="SASS" width="40" height="40"/>
                     </a>
                 </td>
-                <td>
+                <td align="center">
                     <a href="https://lesscss.org/" target="_blank" title="LESS">
-                        <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/less/less-plain-wordmark.svg" alt="LESS" width="40" height="40"/>
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/less/less-plain-wordmark.svg" alt="LESS" width="40" height="40"/>
                     </a>
                 </td>
-                <td>
+                <td align="center">
                     <a href="https://getbootstrap.com/" target="_blank" title="Bootstrap">
-                        <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/bootstrap/bootstrap-original.svg" alt="Bootstrap" width="40" height="40"/>
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bootstrap/bootstrap-original.svg" alt="Bootstrap" width="40" height="40"/>
                     </a>
                 </td>
             </tr>
@@ -72,34 +72,34 @@
         </thead>
         <tbody>
             <tr>
-                <td>
+                <td align="center">
                     <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript" target="_blank" title="JavaScript">
-                        <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-original.svg" alt="javascript" width="40" height="40"/>
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" alt="javascript" width="40" height="40"/>
                     </a>
                 </td>
-                <td>
+                <td align="center">
                     <a href="https://jquery.com/" target="_blank" title="jQuery">
-                        <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/jquery/jquery-original.svg" alt="typescript" width="40" height="40"/>
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/jquery/jquery-original.svg" alt="typescript" width="40" height="40"/>
                     </a>
                 </td>
-                <td>
+                <td align="center">
                     <a href="https://www.typescriptlang.org/" target="_blank" title="TypeScript">
-                        <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/typescript/typescript-original.svg" alt="typescript" width="40" height="40"/>
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg" alt="typescript" width="40" height="40"/>
                     </a>
                 </td>
-                <td>
+                <td align="center">
                     <a href="https://angular.io" target="_blank" title="Angular">
                         <img src="https://angular.io/assets/images/logos/angular/angular.svg" alt="angular" width="40" height="40"/>
                     </a>
                 </td>
-                <td>
+                <td align="center">
                     <a href="https://reactjs.org/" target="_blank" title="React">
-                        <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/react/react-original-wordmark.svg" alt="react" width="40" height="40"/>
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original-wordmark.svg" alt="react" width="40" height="40"/>
                     </a>
                 </td>
-                <td>
+                <td align="center">
                     <a href="https://vuejs.org/" target="_blank" title="Vue">
-                        <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/vuejs/vuejs-original-wordmark.svg" alt="vuejs" width="40" height="40"/>
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vuejs/vuejs-original-wordmark.svg" alt="vuejs" width="40" height="40"/>
                     </a>
                 </td>
             </tr>
@@ -120,19 +120,19 @@
         </thead>
         <tbody>
             <tr>
-                <td>
+                <td align="center">
                     <a href="https://notepad-plus-plus.org/" target="_blank" title="Notepad++">
                         <img src="https://avatars.githubusercontent.com/u/12589084?s=200&v=4" alt="notepad++" width="40" height="40"/>
                     </a>
                 </td>
-                <td>
+                <td align="center">
                     <a href="https://code.visualstudio.com/" target="_blank" title="VS Code">
-                        <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/vscode/vscode-original.svg" alt="vscode" width="40" height="40"/>
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vscode/vscode-original.svg" alt="vscode" width="40" height="40"/>
                     </a>
                 </td>
-                <td>
+                <td align="center">
                     <a href="https://visualstudio.microsoft.com/" target="_blank" title="Visual Studio">
-                        <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/visualstudio/visualstudio-plain.svg" alt="visualstudio" width="40" height="40"/>
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/visualstudio/visualstudio-plain.svg" alt="visualstudio" width="40" height="40"/>
                     </a>
                 </td>
             </tr>

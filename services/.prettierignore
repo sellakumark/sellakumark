@@ -1,5 +1,0 @@
-# Ignore artifacts:
-.DS_Store
-.vscode
-dist
-node_modules

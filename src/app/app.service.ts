@@ -6,7 +6,7 @@ import { catchError } from "rxjs/operators";
 @Injectable({ providedIn: 'root' })
 export class AppService {
 
-  private emailUrl: string = '/assets/email.php';
+  private emailUrl: string = 'https://sellakumark-services.vercel.app/api/email/';
 
   constructor(private httpClient: HttpClient) { }
 

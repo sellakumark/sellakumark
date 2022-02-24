@@ -21,7 +21,7 @@ export class AppComponent implements OnInit {
     this.form = this.fb.group({
       name: ['', Validators.required],
       email: ['', [Validators.required, Validators.email]],
-      message: ['', [Validators.required, Validators.minLength(6), Validators.maxLength(40)]]
+      message: ['', [Validators.required]]
     });
   }
 
@@ -35,11 +35,8 @@ export class AppComponent implements OnInit {
       return;
     }
     this.sendEmail(this.form.value);
-  }
-
-  public onReset(): void {
-    this.submitted = false;
     this.form.reset();
+    this.submitted = false;
   }
 
   public sendEmail(message: IEmail): void {

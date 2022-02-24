@@ -1,39 +1,44 @@
 <main class="main">
-  <!-- Menu -->
   <div class="circle-menu">
     <div class="hamburger">
       <div class="line"></div>
       <div class="line"></div>
       <div class="line"></div>
-      <div class="hamburger__text">MENU</div>
+      <div class="hamburger_text">MENU</div>
     </div>
   </div>
   <div class="nav-wrap">
     <ul class="nav">
-      <li class="nav__item"><a class="active" href="about.html">About</a></li>
-      <li class="nav__item"><a href="resume.html">Resume</a></li>
-      <li class="nav__item"><a href="portfolio.html">Portfolio</a></li>
-      <li class="nav__item"><a href="blog.html">Blog</a></li>
-      <li class="nav__item"><a href="contact.html">Contact</a></li>
+      <li class="nav_item">
+        <a [class.active]="currentPage === 'about'" href="#about" (click)="onPageClick($event)">About</a>
+      </li>
+      <li class="nav_item">
+        <a [class.active]="currentPage === 'resume'" href="#resume" (click)="onPageClick($event)">Resume</a>
+      </li>
+      <li class="nav_item">
+        <a [class.active]="currentPage === 'blog'" href="#blog" (click)="onPageClick($event)">Blog</a>
+      </li>
+      <li class="nav_item">
+        <a [class.active]="currentPage === 'contact'" href="#contact" (click)="onPageClick($event)">Contact</a>
+      </li>
     </ul>
   </div>
 
   <div class="wrapper">
-    <!-- Sidebar -->
     <aside class="sidebar" data-simplebar>
       <div>
         <div class="avatar-wrap">
           <svg class="avatar avatar--180" viewBox="0 0 188 188">
-            <g class="avatar__box">
+            <g class="avatar_box">
               <image
-                xlink:href="https://avatars.githubusercontent.com/u/20513963?s=400&u=042031f1a9476b9758d33ab3fbddc31026530649&v=4"
+                href="https://avatars.githubusercontent.com/u/20513963?s=400&u=042031f1a9476b9758d33ab3fbddc31026530649&v=4"
                 height="100%" width="100%" />
             </g>
           </svg>
         </div>
         <div class="text-center">
-          <h3 class="title sidebar__user-name"><span class="weight--500">Sellakumar</span></h3>
-          <div class="badge badge--gray">MEAN Stack Developer</div>
+          <h3 class="title sidebar_user-name"><span class="weight--500">Sellakumar</span></h3>
+          <div class="badge badge--gray">Web Developer</div>
           <div class="social">
             <a class="social_link" href="https://www.facebook.com/"><i class="font-icon icon-facebook"></i></a>
             <a class="social_link" href="https://www.behance.com/"><i class="font-icon icon-twitter"></i></a>
@@ -41,78 +46,274 @@
           </div>
         </div>
         <ul class="contact-block">
-          <li class="contact-block__item" data-toggle="tooltip" data-placement="top" title="Birthday">
+          <li class="contact-block_item" data-toggle="tooltip" data-placement="top" title="Birthday">
             <i class="font-icon icon-calendar2"></i>May 29, 1991
           </li>
-          <li class="contact-block__item" data-toggle="tooltip" data-placement="top" title="Address">
+          <li class="contact-block_item" data-toggle="tooltip" data-placement="top" title="Address">
             <i class="font-icon icon-map-pin"></i>Chennai, Tamilnadu, IN
           </li>
-          <li class="contact-block__item" data-toggle="tooltip" data-placement="top" title="E-mail">
+          <li class="contact-block_item" data-toggle="tooltip" data-placement="top" title="E-mail">
             <a href="sellakumark@outlook.com"><i class="font-icon icon-mail"></i>sellakumark@outlook.com</a>
           </li>
-          <li class="contact-block__item" data-toggle="tooltip" data-placement="top" title="Phone">
+          <li class="contact-block_item" data-toggle="tooltip" data-placement="top" title="Phone">
             <a href="tel:+919976119157"><i class="font-icon icon-smartphone"></i>+91 (997) 611-9157</a>
           </li>
-          <li class="contact-block__item" data-toggle="tooltip" data-placement="top" title="Skype">
+          <li class="contact-block_item" data-toggle="tooltip" data-placement="top" title="Skype">
             <a href="skype:sellakumark_1"><i class="font-icon icon-skype"></i>sellakumark_1</a>
           </li>
         </ul>
       </div>
       <a class="btn" href="#"><i class="font-icon icon-download"></i> Download CV</a>
     </aside>
-
-    <!-- Content -->
-    <div class="content" data-simplebar>
-      <div class="section mt-0">
-        <h1 class="title title--h1 title__separate">About Me</h1>
-        <div class="pt-2 pt-sm-3">
-          <p>I'm Creative Director and UI/UX Designer from Sydney, Australia, working in web development
-            and print media. I enjoy turning complex problems into simple, beautiful and intuitive
-            designs.</p>
-          <p class="mb-0">My job is to build your website so that it is functional and user-friendly but
-            at the same time attractive. Moreover, I add personal touch to your product and make sure
-            that is eye-catching and easy to use. My aim is to bring across your message and identity in
-            the most creative way. I created web design for many famous brand companies.</p>
-        </div>
-      </div>
-
-      <div class="section">
-        <h2 class="title title--h2">What I'm Doing</h2>
-        <div class="row">
-          <div class="col-12 col-lg-6 case-item-wrap">
-            <div class="case-item">
-              <img class="case-item__icon" src="assets/icons/icon-design.svg" alt="" />
-              <h3 class="title title--h3">Web Design</h3>
-              <p class="case-item__caption">The most modern and high-quality design made at a
-                professional level. </p>
-            </div>
-          </div>
-          <div class="col-12 col-lg-6 case-item-wrap">
-            <div class="case-item">
-              <img class="case-item__icon" src="assets/icons/icon-dev.svg" alt="" />
-              <h3 class="title title--h3">Web Development</h3>
-              <p class="case-item__caption">High-quality development of sites at the professional
-                level.</p>
-            </div>
-          </div>
-          <div class="col-12 col-lg-6 case-item-wrap">
-            <div class="case-item">
-              <img class="case-item__icon" src="assets/icons/icon-app.svg" alt="" />
-              <h3 class="title title--h3">Mobile Apps</h3>
-              <p class="case-item__caption">Professional development of applications for iOS and
-                Android.</p>
-            </div>
-          </div>
-          <div class="col-12 col-lg-6 case-item-wrap">
-            <div class="case-item">
-              <img class="case-item__icon" src="assets/icons/icon-photo.svg" alt="" />
-              <h3 class="title title--h3">Photography</h3>
-              <p class="case-item__caption">I make high-quality photos of any category at a
-                professional level.</p>
-            </div>
+    <content class="content" data-simplebar>
+      <section class="about-section" [class.active]="currentPage === 'about'">
+        <div class="section mt-0">
+          <h1 class="title title--h1 title_separate">About Me</h1>
+          <div class="pt-2 pt-sm-3">
+            <p>I'm Creative Director and UI/UX Designer from Sydney, Australia, working in web development
+              and print media. I enjoy turning complex problems into simple, beautiful and intuitive
+              designs.</p>
+            <p class="mb-0">My job is to build your website so that it is functional and user-friendly but
+              at the same time attractive. Moreover, I add personal touch to your product and make sure
+              that is eye-catching and easy to use. My aim is to bring across your message and identity in
+              the most creative way. I created web design for many famous brand companies.</p>
           </div>
         </div>
-      </div>
-    </div>
+        <div class="section">
+          <h2 class="title title--h2">What I'm Doing</h2>
+          <div class="row">
+            <div class="col-12 col-lg-6 case-item-wrap">
+              <div class="case-item">
+                <img class="case-item_icon" src="assets/icons/icon-design.svg" alt="" />
+                <h3 class="title title--h3">Product Development</h3>
+                <p class="case-item_caption">The most modern and high-quality design made at a
+                  professional level. </p>
+              </div>
+            </div>
+            <div class="col-12 col-lg-6 case-item-wrap">
+              <div class="case-item">
+                <img class="case-item_icon" src="assets/icons/icon-dev.svg" alt="" />
+                <h3 class="title title--h3">Web Development</h3>
+                <p class="case-item_caption">High-quality development of sites at the professional
+                  level.</p>
+              </div>
+            </div>
+            <div class="col-12 col-lg-6 case-item-wrap">
+              <div class="case-item">
+                <img class="case-item_icon" src="assets/icons/icon-app.svg" alt="" />
+                <h3 class="title title--h3">MEAN Stack Development</h3>
+                <p class="case-item_caption">Professional development of applications for iOS and
+                  Android.</p>
+              </div>
+            </div>
+            <div class="col-12 col-lg-6 case-item-wrap">
+              <div class="case-item">
+                <img class="case-item_icon" src="assets/icons/icon-photo.svg" alt="" />
+                <h3 class="title title--h3">Team Management</h3>
+                <p class="case-item_caption">I make high-quality photos of any category at a
+                  professional level.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="resume-section" [class.active]="currentPage === 'resume'">
+        <div class="section mt-0">
+          <h1 class="title title--h1 title_separate">Resume</h1>
+        </div>
+        <div class="section">
+          <h2 class="title title--h2"><img class="title-icon" src="assets/icons/icon-education.svg" alt="" />
+            Education</h2>
+          <div class="timeline">
+            <article class="timeline_item">
+              <h5 class="title title--h3 timeline_title">University School of the Arts</h5>
+              <span class="timeline_period">2007 — 2009</span>
+              <p class="timeline_description">Nemo enims ipsam voluptatem, blanditiis praesentium
+                voluptum delenit atque corrupti, quos dolores et quas molestias exceptur.</p>
+            </article>
+            <article class="timeline_item">
+              <h5 class="title title--h3 timeline_title">New York Academy of Art</h5>
+              <span class="timeline_period">2005 — 2007</span>
+              <p class="timeline_description">Ratione voluptatem sequi nesciunt, facere quisquams facere
+                menda ossimus, omnis voluptas assumenda est omnis..</p>
+            </article>
+            <article class="timeline_item">
+              <h5 class="title title--h3 timeline_title">High School of Art and Design</h5>
+              <span class="timeline_period">2003 — 2005</span>
+              <p class="timeline_description">Duis aute irure dolor in reprehenderit in voluptate, quila
+                voluptas mag odit aut fugit, sed consequuntur magni dolores eos.</p>
+            </article>
+          </div>
+        </div>
+        <div class="section">
+          <h2 class="title title--h2"><img class="title-icon" src="assets/icons/icon-experience.svg" alt="" />
+            Experience</h2>
+          <div class="timeline">
+            <article class="timeline_item">
+              <h5 class="title title--h3 timeline_title">Creative Director</h5>
+              <span class="timeline_period">2015 — Present</span>
+              <p class="timeline_description">Nemo enim ipsam voluptatem blanditiis praesentium voluptum
+                delenit atque corrupti, quos dolores et qvuas molestias exceptur.</p>
+            </article>
+            <article class="timeline_item">
+              <h5 class="title title--h3 timeline_title">Art Director</h5>
+              <span class="timeline_period">2013 — 2015</span>
+              <p class="timeline_description">Nemo enims ipsam voluptatem, blanditiis praesentium
+                voluptum delenit atque corrupti, quos dolores et quas molestias exceptur.</p>
+            </article>
+            <article class="timeline_item">
+              <h5 class="title title--h3 timeline_title">Web Designer</h5>
+              <span class="timeline_period">2010 — 2013</span>
+              <p class="timeline_description">Nemo enims ipsam voluptatem, blanditiis praesentium
+                voluptum delenit atque corrupti, quos dolores et quas molestias exceptur.</p>
+            </article>
+          </div>
+        </div>
+        <div class="section">
+          <h2 class="title title--h2">My Skills</h2>
+          <div class="box-gray">
+            <div class="progress">
+              <div class="progress-bar" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100">
+                <div class="progress-text"><span>Web Design</span><span>80%</span></div>
+              </div>
+              <div class="progress-text"><span>Web Design</span></div>
+            </div>
+            <div class="progress">
+              <div class="progress-bar" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">
+                <div class="progress-text"><span>Graphic Design</span><span>75%</span></div>
+              </div>
+              <div class="progress-text"><span>Graphic Design</span></div>
+            </div>
+            <div class="progress">
+              <div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100">
+                <div class="progress-text"><span>Photoshop</span><span>90%</span></div>
+              </div>
+              <div class="progress-text"><span>Photoshop</span></div>
+            </div>
+            <div class="progress">
+              <div class="progress-bar" role="progressbar" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100">
+                <div class="progress-text"><span>Illustrator</span><span>50%</span></div>
+              </div>
+              <div class="progress-text"><span>Illustrator</span></div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="blog-section" [class.active]="currentPage === 'blog'">
+        <div class="section mt-0">
+          <h1 class="title title--h1 title_separate">Blog</h1>
+        </div>
+        <div class="news-grid section">
+          <article class="news-item box">
+            <div class="news-item_image-wrap overlay overlay--45">
+              <div class="news-item_date">16<span>Sep</span></div>
+              <a class="news-item_link" href="single-post.html"></a>
+              <img class="cover lazyload" src="assets/img/image_02.jpg" alt="" />
+            </div>
+            <div class="news-item_caption">
+              <h3 class="title title--h3">Design Conferences in 2019</h3>
+              <p>veritatis et quasi architecto beatae vitae dicta sunt, explicabo...</p>
+            </div>
+          </article>
+          <article class="news-item box">
+            <div class="news-item_image-wrap overlay overlay--45">
+              <div class="news-item_date">15<span>Sep</span></div>
+              <a class="news-item_link" href="single-post.html"></a>
+              <img class="cover lazyload" src="assets/img/image_06.jpg" alt="" />
+            </div>
+            <div class="news-item_caption">
+              <h3 class="title title--h3">Best Fonts Every Designer</h3>
+              <p>Sed perspiciatis nam libero tempore, cum soluta nobis est eligendi...</p>
+            </div>
+          </article>
+          <article class="news-item box">
+            <div class="news-item_image-wrap overlay overlay--45">
+              <div class="news-item_date">14<span>Sep</span></div>
+              <a class="news-item_link" href="single-post.html"></a>
+              <img class="cover lazyload" src="assets/img/image_08.jpg" alt="" />
+            </div>
+            <div class="news-item_caption">
+              <h3 class="title title--h3">Design Digest #80</h3>
+              <p>Excepteur sint occaecat cupidatat no proident, quis nostrum ullam...</p>
+            </div>
+          </article>
+          <article class="news-item box">
+            <div class="news-item_image-wrap overlay overlay--45">
+              <div class="news-item_date">13<span>Sep</span></div>
+              <a class="news-item_link" href="single-post.html"></a>
+              <img class="cover lazyload" src="assets/img/image_07.jpg" alt="" />
+            </div>
+            <div class="news-item_caption">
+              <h3 class="title title--h3">UI Interactions of the week</h3>
+              <p>enim ad minim veniam, consectetur adipiscing elit, quis nostrud nisi...</p>
+            </div>
+          </article>
+          <article class="news-item box">
+            <div class="news-item_image-wrap overlay overlay--45">
+              <div class="news-item_date">12<span>Sep</span></div>
+              <a class="news-item_link" href="single-post.html"></a>
+              <img class="cover lazyload" src="assets/img/image_05.jpg" alt="" />
+            </div>
+            <div class="news-item_caption">
+              <h3 class="title title--h3">The Forgotten Art of Spacing</h3>
+              <p>maxime placeat, sed do eiusmod tempor incididunt ut labore...</p>
+            </div>
+          </article>
+          <article class="news-item box">
+            <div class="news-item_image-wrap overlay overlay--45">
+              <div class="news-item_date">11<span>Sep</span></div>
+              <a class="news-item_link" href="single-post.html"></a>
+              <img class="cover lazyload" src="assets/img/image_01.jpg" alt="" />
+            </div>
+            <div class="news-item_caption">
+              <h3 class="title title--h3">Design Digest #79</h3>
+              <p>Sed perspiciatis nam libero tempore, cum soluta nobis est eligendi...</p>
+            </div>
+          </article>
+        </div>
+      </section>
+      <section class="contact-section" [class.active]="currentPage === 'contact'">
+        <div class="section mt-0">
+          <h1 class="title title--h1 title_separate">Contact</h1>
+        </div>
+        <div class="map section" id="map"></div>
+        <h2 class="title title--h2">Contact Form</h2>
+        <form id="contact-form" class="contact-form" data-toggle="validator" [formGroup]="form" (ngSubmit)="onSubmit()">
+          <div class="row">
+            <div class="form-group col-12 col-md-6">
+              <i class="font-icon icon-user"></i>
+              <input type="text" formControlName="name" class="input input_icon form-control" autocomplete="on"
+                placeholder="Full name" [ngClass]="{ 'is-invalid': submitted && f.name.errors }" />
+              <div *ngIf="submitted && f.name.errors" class="invalid-feedback">
+                <div *ngIf="f.name.errors.required">Name is required</div>
+              </div>
+            </div>
+            <div class="form-group col-12 col-md-6">
+              <i class="font-icon icon-at"></i>
+              <input type="text" formControlName="email" class="input input_icon form-control" autocomplete="on"
+                placeholder="Email address" [ngClass]="{ 'is-invalid': submitted && f.email.errors }" />
+              <div *ngIf="submitted && f.email.errors" class="invalid-feedback">
+                <div *ngIf="f.email.errors.required">Email is required</div>
+                <div *ngIf="f.email.errors.email">Email is invalid</div>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="form-group col-12 col-md-12">
+              <textarea class="textarea form-control" formControlName="message" placeholder="Your Message"
+                [ngClass]="{ 'is-invalid': submitted && f.message.errors }" rows="4"></textarea>
+              <div *ngIf="submitted && f.message.errors" class="invalid-feedback">
+                <div *ngIf="f.message.errors.required">Message is required</div>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-12 col-md-12 form-group">
+              <button type="submit" class="btn btn-submit"><i class="font-icon icon-send"></i> Send Message</button>
+            </div>
+          </div>
+        </form>
+      </section>
+    </content>
   </div>
 </main>

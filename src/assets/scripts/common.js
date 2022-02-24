@@ -36,34 +36,6 @@ $(document).ready(function () {
     }
   });
 
-  $('body, .js-img-load').imagesLoaded({ background: !0 }).always(function (instance) {
-    preloader(); //Init preloader
-  });
-
-  function preloader() {
-    var tl = anime.timeline({});
-    tl
-      .add({
-        targets: '.preloader',
-        duration: 1,
-        opacity: 1
-      })
-      .add({
-        targets: '.preloader__progress span',
-        duration: 600,
-        width: '100%',
-        easing: 'easeInOutQuart'
-      })
-      .add({
-        targets: '.preloader',
-        duration: 600,
-        opacity: 0,
-        zIndex: '-1',
-        easing: 'easeInOutQuart'
-      });
-  };
-
-
   /*-----------------------------------------------------------------
     Hamburger
   -------------------------------------------------------------------*/
@@ -322,8 +294,8 @@ $(document).ready(function () {
   $('.js-tabs').each(function () {
     $('.content .tabcontent').hide();
     $('.content .tabcontent:first').show();
-    $('.nav .nav__item a').on('click', function () {
-      $('.nav .nav__item a').removeClass('active');
+    $('.nav .nav_item a').on('click', function () {
+      $('.nav .nav_item a').removeClass('active');
       $(this).addClass('active');
       var currentTab = $(this).attr('href');
       $('.content .tabcontent').hide();
@@ -340,7 +312,7 @@ $(document).ready(function () {
   // Mobile close menu
   windowWidth = $(window).width();
   if ((windowWidth < screen)) {
-    $('.nav .nav__item a').on('click', function () {
+    $('.nav .nav_item a').on('click', function () {
       $('.hamburger').removeClass('is-active');
       $('.inner-menu').removeClass('is-active');
       $('body').removeClass('open-menu');

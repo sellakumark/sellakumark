@@ -81,6 +81,17 @@
             }
           }
         },
+        "deploy": {
+          "builder": "angular-cli-ghpages:deploy",
+          "options": {
+            "branch": "master",
+            "dir": "dist/sellakumark",
+            "message": "Auto-generated commit: Latest profile changes published!!",
+            "noBuild": true,
+            "noSilent": true,
+            "repo": "https://github.com/sellakumark/sellakumark.github.io.git"
+          }
+        },
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {

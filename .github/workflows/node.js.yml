@@ -29,6 +29,9 @@ jobs:
       - name: Build
         run: npm run build:prod
       - name: Deploy
-        run: npm run deploy
+        run: |
+          git config --local user.name "${{github.actor}}"
+          git config --local user.email "${{github.actor}}@users.noreply.github.com"
+          npm run deploy
         env:
           NODE_AUTH_TOKEN: ${{secrets.GITHUB_TOKEN}}

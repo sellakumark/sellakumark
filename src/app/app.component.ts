@@ -1,5 +1,7 @@
-import { Component, OnInit, ViewEncapsulation } from '@angular/core';
+import { AfterViewInit, Component, OnInit, ViewEncapsulation } from '@angular/core';
 import { AbstractControl, FormBuilder, FormGroup, Validators } from '@angular/forms';
+import * as $ from 'jquery';
+import * as ScrollMagic from 'scrollmagic';
 import { AppService, IEmail } from './app.service';
 
 @Component({
@@ -8,7 +10,7 @@ import { AppService, IEmail } from './app.service';
   styleUrls: ['./app.component.scss'],
   encapsulation: ViewEncapsulation.None
 })
-export class AppComponent implements OnInit {
+export class AppComponent implements AfterViewInit, OnInit {
 
   public title: string = 'sellakumark';
   public currentPage: string = 'about';
@@ -16,6 +18,23 @@ export class AppComponent implements OnInit {
   public submitted: boolean = false;
 
   constructor(private appService: AppService, private fb: FormBuilder) { }
+
+  public ngAfterViewInit(): void {
+    $('.progress').each(function () {
+      new ScrollMagic.Scene({
+        triggerElement: '.progress',
+        triggerHook: 'onEnter',
+        duration: 300
+      })
+        .addTo(new ScrollMagic.Controller())
+        .on("enter", function (e) {
+          var progressBar = $('.progress-bar');
+          progressBar.each(function (indx) {
+            $(this).css({ 'width': $(this).attr('aria-valuenow') + '%', 'z-index': '2' });
+          });
+        });
+    });
+  }
 
   public ngOnInit(): void {
     this.form = this.fb.group({

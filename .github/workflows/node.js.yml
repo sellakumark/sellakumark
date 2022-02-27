@@ -32,7 +32,7 @@ jobs:
         run: |
           git config --local user.name "${{github.actor}}"
           git config --local user.email "${{github.actor}}@users.noreply.github.com"
-          echo "env"
+          echo "${{env}}"
           npm run deploy
         env:
           github-user: ${{github.actor}}

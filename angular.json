@@ -26,6 +26,10 @@
             "polyfills": "src/polyfills.ts",
             "tsConfig": "tsconfig.app.json",
             "aot": true,
+            "allowedCommonJsDependencies": [
+              "jquery",
+              "scrollmagic"
+            ],
             "assets": [
               "src/favicon.ico",
               "src/assets"

@@ -3,7 +3,6 @@
 <h3 class="text-center">A passionate web developer</h3>
 
 <ul>
-    <li>👋 Currently working as a product development manager at Syncfusion Software Pvt Ltd.</li>
     <li>👀 I’m interested in developing web-based project development.</li>
     <li>🌱 I’m currently learning <i class="fs-bold">angular</i> framework.</li>
     <li>💞️ I’m looking to collaborate on angular based web projects.</li>

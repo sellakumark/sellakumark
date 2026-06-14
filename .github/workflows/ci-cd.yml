@@ -39,17 +39,13 @@ jobs:
       - name: Build
         run: npm run build
 
-      - name: Create .nojekyll
-        run: touch dist/.nojekyll
-
-      - name: Setup Pages
-        uses: actions/configure-pages@v5
-
-      - name: Upload artifact
-        uses: actions/upload-pages-artifact@v3
+      - name: Pushes to another repository
+        uses: cpina/github-action-push-to-another-repository@main
+        env:
+          API_TOKEN_GITHUB: ${{ secrets.API_TOKEN_GITHUB }}
         with:
-          path: "dist"
-
-      - name: Deploy to GitHub Pages
-        id: deployment
-        uses: actions/deploy-pages@v4
+          source-directory: "dist"
+          destination-github-username: "${{ github.actor }}"
+          destination-repository-name: "${{ github.actor }}.github.io"
+          user-email: "${{ github.actor }}@outlook.com"
+          target-branch: master

@@ -1,0 +1,36 @@
+{
+  "bracketSameLine": true,
+  "endOfLine": "auto",
+  "printWidth": 320,
+  "proseWrap": "never",
+  "trailingComma": "none",
+  "tabWidth": 2,
+  "semi": true,
+  "overrides": [
+    {
+      "files": "*.html",
+      "options": {
+        "parser": "angular"
+      }
+    },
+    {
+      "files": "*.ts",
+      "options": {
+        "parser": "typescript",
+        "singleQuote": true
+      }
+    },
+    {
+      "files": "*.scss",
+      "options": {
+        "parser": "scss"
+      }
+    },
+    {
+      "files": "*.json",
+      "options": {
+        "parser": "json"
+      }
+    }
+  ]
+}

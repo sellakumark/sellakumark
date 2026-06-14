@@ -1,0 +1,180 @@
+<main class="main">
+  <div class="circle-menu">
+    <div class="hamburger">
+      <div class="line"></div>
+      <div class="line"></div>
+      <div class="line"></div>
+      <div class="hamburger_text">MENU</div>
+    </div>
+  </div>
+
+  <div class="nav-wrap">
+    <ul class="nav">
+      @for (page of pages(); track page.value) {
+        <li class="nav_item">
+          <a [class.active]="currentPage() === page.value" href="#{{ page.value }}" (click)="onPageClick($event, page)">{{ page.label }}</a>
+        </li>
+      }
+    </ul>
+  </div>
+
+  <div class="wrapper">
+    <aside class="sidebar" data-simplebar>
+      <div class="sidebar_inner">
+        <div class="avatar-wrap">
+          <svg class="avatar avatar--180" viewBox="0 0 188 188">
+            <g class="avatar_box">
+              <image href="https://avatars.githubusercontent.com/u/20513963?s=400&u=042031f1a9476b9758d33ab3fbddc31026530649&v=4" height="100%" width="100%" />
+            </g>
+          </svg>
+        </div>
+
+        <div class="text-center mb-3">
+          <h3 class="title sidebar_user-name"><span class="weight--500">Sellakumar</span></h3>
+          <div class="badge badge--gray">Technical Lead/Architect</div>
+        </div>
+
+        <ul class="contact-block">
+          @for (profile of profileLinks(); track profile.label; let last = $last) {
+            <li class="contact-block_item" [ngClass]="{ 'd-flex': last, 'justify-content-center': last }" data-toggle="tooltip" data-placement="top" [title]="profile.title">
+              @if (profile.url && last) {
+                <a class="btns" [href]="profile.url" download><i class="font-icon {{ profile.icon }}"></i>{{ profile.label }}</a>
+              } @else if (profile.url && !last) {
+                <a [href]="profile.url"><i class="font-icon {{ profile.icon }}"></i>{{ profile.label }}</a>
+              } @else {
+                <i class="font-icon {{ profile.icon }}"></i>{{ profile.label }}
+              }
+            </li>
+          }
+        </ul>
+      </div>
+    </aside>
+
+    <content class="content" data-simplebar>
+      @switch (currentPage()) {
+        @case ("about") {
+          <ng-container *ngTemplateOutlet="aboutTemplate" />
+        }
+        @case ("resume") {
+          <ng-container *ngTemplateOutlet="resumeTemplate" />
+        }
+        @case ("blog") {
+          <ng-container *ngTemplateOutlet="blogTemplate" />
+        }
+      }
+    </content>
+  </div>
+</main>
+
+<ng-template #aboutTemplate>
+  <section class="about-section">
+    <div class="section mt-0">
+      <h1 class="title title--h1 title_separate">About Me</h1>
+      <div class="pt-2 pt-sm-3">
+        <p class="m-0">
+          I am a dedicated senior consultant with over 11+ years of experience in web development and technical leadership, specializing in Angular, React, and TypeScript. I aim to leverage my expertise in agile methodologies and technical innovation to drive strategic solutions and enhance business performance as a
+          Technical Lead or Architect within the Information Technology industry.
+        </p>
+      </div>
+    </div>
+    <div class="section mt-3">
+      <h2 class="title title--h2">What I'm Doing</h2>
+      <div class="row">
+        @for (skill of developmentSkills(); track skill.label) {
+          <div class="col-12 col-lg-6 case-item-wrap">
+            <div class="case-item">
+              <img class="case-item_icon" [src]="skill.icon" alt="logo" />
+              <h3 class="title title--h3">{{ skill.label }}</h3>
+              <p class="case-item_caption">{{ skill.value }}</p>
+            </div>
+          </div>
+        }
+      </div>
+    </div>
+  </section>
+</ng-template>
+
+<ng-template #resumeTemplate>
+  <section class="resume-section">
+    <div class="section mt-0">
+      <h1 class="title title--h1 title_separate">Resume</h1>
+    </div>
+
+    <div class="section">
+      <h2 class="title title--h2"><img class="title-icon" src="assets/icons/icon-experience.svg" alt="logo" /> Experience</h2>
+      <div class="timeline">
+        @for (experience of experiences(); track experience.label) {
+          <article class="timeline_item">
+            <h5 class="title title--h3 timeline_title">{{ experience.label }}</h5>
+            <div class="timeline_period mb-3">{{ experience.value }}</div>
+            @for (option of experience.options || []; track option.label) {
+              <article class="timeline_item">
+                <h6 class="title title--h6 timeline_title">{{ option.label }}</h6>
+                <span class="timeline_period">{{ option.value }}</span>
+                <p class="timeline_description">{{ option.url }}</p>
+              </article>
+            }
+          </article>
+        }
+      </div>
+    </div>
+
+    <div class="section">
+      <h2 class="title title--h2"><img class="title-icon" src="assets/icons/icon-education.svg" alt="logo" /> Education</h2>
+      <div class="timeline">
+        @for (education of educations(); track education.label) {
+          <article class="timeline_item">
+            <h5 class="title title--h3 timeline_title">{{ education.label }}</h5>
+            <span class="timeline_period">{{ education.value }}</span>
+            <p class="timeline_description">{{ education.url }}</p>
+          </article>
+        }
+      </div>
+    </div>
+
+    <div class="section">
+      <h2 class="title title--h2">My Skills</h2>
+      <div class="box-gray">
+        @for (skill of technicalSkills(); track skill.label) {
+          <div class="progress">
+            <div class="progress-bar" aria-valuenow="{{ skill.value }}" aria-valuemin="0" aria-valuemax="100">
+              <div class="progress-text">
+                <span>{{ skill.label }}</span
+                ><span>{{ skill.value }}%</span>
+              </div>
+            </div>
+            <div class="progress-text">
+              <span>{{ skill.label }}</span>
+            </div>
+          </div>
+        }
+      </div>
+    </div>
+  </section>
+</ng-template>
+
+<ng-template #blogTemplate>
+  <section class="blog-section">
+    <div class="section mt-0">
+      <h1 class="title title--h1 title_separate">Blog</h1>
+    </div>
+    <div class="news-grid section">
+      @for (blog of blogs(); track blog.label) {
+        <article class="news-item box">
+          <div class="news-item_image-wrap overlay overlay--45">
+            <div class="news-item_date">
+              {{ blog.title }}<span>{{ blog.value }}</span>
+            </div>
+            <a class="news-item_link" target="_blank" href="{{ blog.url }}" rel="noopener noreferrer" aria-label="Read more about {{ blog.label }}">
+              <span class="visually-hidden">Read more about {{ blog.label }}</span>
+            </a>
+            <img class="cover lazyload" src="{{ blog.icon }}" alt="banner" />
+          </div>
+          <div class="news-item_caption">
+            <h3 class="title title--h3">{{ blog.label }}</h3>
+          </div>
+        </article>
+      }
+    </div>
+  </section>
+</ng-template>
